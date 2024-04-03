@@ -72,7 +72,7 @@ func main() {
 
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(http.StatusOK, "index", map[string]any{
-			"AppID": os.Getenv("PASSAGE_APP_ID"),
+			"AppID": passageAppID,
 		})
 	})
 
